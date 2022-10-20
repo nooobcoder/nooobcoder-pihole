@@ -1,0 +1,8 @@
+/pihole/*
+!/pihole/keep
+/openvpn/*
+!openvpn/config
+/.idea
+/.psd
+/.test
+*.save
