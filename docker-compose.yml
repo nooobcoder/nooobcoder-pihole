@@ -6,11 +6,11 @@ services:
         command: -H unix:///var/run/docker.sock
         restart: always
         ports:
-        - 9000:9000
-        - 8000:8000
+            - 9000:9000
+            - 8000:8000
         volumes:
-        - /var/run/docker.sock:/var/run/docker.sock
-        - portainer_data:/data
+            - /var/run/docker.sock:/var/run/docker.sock
+            - portainer_data:/data
 
     openvpn:
         container_name: openvpn
@@ -21,12 +21,12 @@ services:
             vpn-net:
                 ipv4_address: 172.20.0.3
         environment:
-            REQ_COUNTRY: US
-            REQ_PROVINCE: California
-            REQ_CITY: San Francisco
-            REQ_ORG: Copyleft Certificate Co
-            REQ_OU: My Organizational Unit
-            REQ_CN: MyOpenVPN
+            REQ_COUNTRY: IN
+            REQ_PROVINCE: Karnataka
+            REQ_CITY: Bangalore
+            REQ_ORG: nooobcoder
+            REQ_OU: nothing much
+            REQ_CN: nooobcoder-vpn
         volumes:
             - ./openvpn/pki:/etc/openvpn/pki
             - ./openvpn/clients:/etc/openvpn/clients
@@ -44,7 +44,7 @@ services:
             vpn-net:
                 ipv4_address: 172.20.0.2
         environment:
-            TZ: "Europe/Berlin"
+            TZ: "Asia/Kolkata"
             WEBPASSWORD: "password"
             DNS1: 208.67.222.222 # OpenDNS
             DNS2: 208.67.220.220
@@ -62,5 +62,4 @@ networks:
         ipam:
             driver: default
             config:
-                -   subnet: 172.20.0.0/16
-
+                - subnet: 172.20.0.0/16
