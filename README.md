@@ -8,6 +8,10 @@
 
 <br/>
 
+<div align="center"><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgist.githubusercontent.com%2Fnooobcoder%2Fd5d0906186498777b92f1bf74d0a0af1%2Fraw%2Fe522ae2d89fd3fefd25a7bc2849424eb3ea452d8%2Ftemplate.json"><img src="https://aka.ms/deploytoazurebutton"/></div>
+
+</br>
+
 <p align="center">
   <a href="https://github.com/Simonwep/openvpn-pihole/actions?query=workflow%3ACI"><img
      alt="CI Status"
