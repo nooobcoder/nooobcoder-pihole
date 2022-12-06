@@ -43,6 +43,8 @@ services:
         networks:
             vpn-net:
                 ipv4_address: 172.20.0.2
+        ports:
+            - "80:80/tcp"
         environment:
             TZ: "Asia/Kolkata"
             WEBPASSWORD: "password"
