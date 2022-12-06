@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
     portainer:
-        container-name: portainer
+        container_name: portainer
         image: portainer/portainer
         command: -H unix:///var/run/docker.sock
         restart: always
